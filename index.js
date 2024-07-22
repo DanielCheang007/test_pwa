@@ -6,7 +6,7 @@ Notification.requestPermission().then((result) => {
 
 
 const fetchArticles = async () => {
-    const res = await fetch('http://localhost:3000/api/news');
+    const res = await fetch('https://test-pwa-murex-kappa.vercel.app/api/news');
     const articles = await res.json();
     document.querySelector('.articles').innerHTML = `
             <ul>
